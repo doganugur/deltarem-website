@@ -26,10 +26,51 @@
     .deltarem_header_left ul li a:hover{
         color:#00a98f;
     }
-
     .deltarem_header_right{
         float: right;
     }
+    .deltarem-social-icons.text-left a {
+        display: inline-block;
+    }
+    .deltarem-social-icons i {
+        font-size: 15px;
+        background: #333;
+        padding: 8px 10px;
+        color: #fff;
+        border: 1px solid #333;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+            border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+    }
+    .w3ls-social-icons i:hover {
+        background: transparent;
+        color: #efb312;
+        border: 1px solid #efb312;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+    }
+    .top-header-main {
+        padding: 1em 0em;
+    }
+    .header-address h6 {
+        font-size:0.9em;
+        color: #fff;
+        display: inline-block;
+    }
+    .logo h1 {
+        font-size:2.5em;
+    }
+   
 	@media (max-width:1680px){
 	}
 	@media (max-width:1600px){

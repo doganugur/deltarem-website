@@ -1,9 +1,136 @@
 :host {
-    .agileits_top_menu {
+    .deltarem_top_menu {
         padding: 0.5em 2em;
         background: #000;
         border: #333;
     }
 
+    .deltarem_header_left{
+        float:left;
+        margin: .3em 0 0;
+    }
+    .deltarem_header_left ul li{
+        display:inline-block;
+        margin-right:2em;
+        font-size:14px;
+        color:#999;
+    }
+    .deltarem_header_left ul li i {
+        padding-right: 1em;
+        color: #00a98f;
+    }
+    .deltarem_header_left ul li a{
+        color:#999;
+        text-decoration:none;
+    }
+    .deltarem_header_left ul li a:hover{
+        color:#00a98f;
+    }
+
+    .deltarem_header_right{
+        float: right;
+    }
+	@media (max-width:1680px){
+	}
+	@media (max-width:1600px){
+	}
+	@media (max-width:1440px){
+	}
+	@media (max-width:1366px){
+	}
+	@media (max-width:1280px){
+	}
+	@media (max-width: 1024px){
+	}
+	@media (max-width:1080px){
+	}
+	@media (max-width:991px){
+	}
+    @media (max-width: 800px){
+        
+        .deltarem_header_left ul li {
+            display: inline-block;
+            margin-right: 0.2em;
+        }
+    }
+
+    @media (max-width: 768px){
+      
+        .deltarem_header_right {
+            float: none;
+            text-align: center;
+            margin: 6% auto 0;
+            width: 22%;
+        }
+    }
+	@media (max-width: 767px){
+	}
+    @media (max-width: 736px){
+        
+        .deltarem_header_right {
+            float: none;
+            text-align: center;
+            margin: 6% auto 0;
+            width: 24%;
+        }
+    }
+	@media (max-width: 667px){
+	}
+	@media (max-width: 640px){
+	}
+    @media (max-width: 600px){
+        
+        .deltarem_header_right {
+            float: none;
+            text-align: center;
+            margin: 2% auto 0;
+            width: 30%;
+        }	
+    }
+    @media (max-width: 568px) {
+
+        .deltarem_header_right {
+            float: none;
+            text-align: center;
+            margin: 2% auto 0;
+            width: 33%;
+        }
+    }
+	@media (max-width: 480px){
+	}
+	@media (max-width: 440px){
+	}
+	@media (max-width: 414px){
+	}
+	@media (max-width: 384px){
+	}
+	@media (max-width: 375px){
+	}
+	@media (max-width: 320px){
+	}
+
+
+
     
+
+
+
+    
+
+    
+
+    @media (max-width: 568px) {
+        .deltarem_header_right {
+            float: none;
+            text-align: center;
+            margin: 2% auto 0;
+            width: 37%;
+        }
+    }
+    
+    @media (max-width: 440px){
+    }
+
+    @media (max-width: 414px){
+    }
 }

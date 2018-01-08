@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { TopMenuComponent } from './shared/top-menu/top-menu.component';
-import { MainComponent } from './main/main.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
@@ -22,7 +21,6 @@ import { ProjectsComponent } from './projects/projects.component';
     HeaderComponent,
     FooterComponent,
     TopMenuComponent,
-    MainComponent,
     HomeComponent,
     AboutComponent,
     ContactComponent,

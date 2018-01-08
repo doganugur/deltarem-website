@@ -99,38 +99,51 @@
 	@media (max-width: 480px){
 	}
 	@media (max-width: 440px){
-	}
-	@media (max-width: 414px){
-	}
-	@media (max-width: 384px){
-	}
-	@media (max-width: 375px){
-	}
-	@media (max-width: 320px){
-	}
-
-
-
-    
-
-
-
-    
-
-    
-
-    @media (max-width: 568px) {
         .deltarem_header_right {
             float: none;
             text-align: center;
             margin: 2% auto 0;
-            width: 37%;
+            width: 47%;
         }
-    }
     
-    @media (max-width: 440px){
-    }
+        .deltarem_header_right {
+            float: none;
+            text-align: center;
+            margin: 2% auto 0;
+            width: 41%;
+        }
+	}
+	@media (max-width: 414px){
+        .deltarem_header_right {
+            float: none;
+            text-align: center;
+            margin: 2% auto 0;
+            width: 47%;
+        }
+	}
+	@media (max-width: 384px){
+        .deltarem_header_right {
+            float: none;
+            text-align: center;
+            margin: 2% auto 0;
+            width: 50%;
+        }
+	}
+	@media (max-width: 375px){
+        .deltarem_header_right {
+            float: none;
+            margin: 2% auto 0;
+            width: 51%;
+        }
+	}
+	@media (max-width: 320px){
+        .deltarem_header_right {
+            float: none;
+            text-align: center;
+            margin: 2% auto 0;
+            width: 63%;
+        }
+	}
 
-    @media (max-width: 414px){
-    }
+
 }

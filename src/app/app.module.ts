@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import { ServicesComponent } from './services/services.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { CarouselComponent } from './shared/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProjectsComponent } from './projects/projects.component';
     ContactComponent,
     BlogComponent,
     ServicesComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

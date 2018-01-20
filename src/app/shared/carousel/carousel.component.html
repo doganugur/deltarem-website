@@ -1,21 +1,10 @@
 <div class="row">
     <div class="col-md-12">
         <div class="carousel slide">
-            <ol class="carousel-indicators" [hidden]="slides.length <= 1">
-                <li *ngFor="#slidez of slides" [class.active]="slidez.active === true" (click)="select(slidez)"></li>
+            <ol class="carousel-indicators carousel-indicators-numbers " [hidden]="slides.length <= 1">
+                <li *ngFor="let slide of slides" [class.active]="slide.isActive === true" (click)="selectSlide(slide)"></li>
             </ol>
-            <div class="carousel-inner">
-                <div [class.active]="active" class="item text-center">
-                    <div *ngFor="#slidez of slides; #index=index" [active]="slidez.active">
-                        <img [src]="slidez.image" style="margin:auto;">
-
-                        <div class="carousel-caption">
-                            <h3 style="background-color: transparent;color: white;">Slide {{index + 1}}</h3>
-                            <p style="background-color: transparent;color: white;">{{slidez.text}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
             <a class="left carousel-control" (click)="prev()" [hidden]="!slides.length">
                 <span class="glyphicon glyphicon-chevron-left"></span>
             </a>

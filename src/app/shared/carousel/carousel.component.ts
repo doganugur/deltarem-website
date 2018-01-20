@@ -6,21 +6,32 @@ import { Component, OnInit, Input, OnDestroy } from '@angular/core';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit, OnDestroy {
-  private slides: any[];
-
+  private slides: Slide[];
+  private activeSlide: Slide;
   constructor() { }
 
   ngOnInit() {
     this.slides = this.getSlides();
   }
 
-  public getSlides() {
-      return [ { imagePath: './assets/images/1.jpg', imageHeader: 'Header 1', imageText: 'Text 1'},
-      { imagePath: './assets/images/2.jpg', imageHeader: 'Header 2', imageText: 'Text 2'},
-      { imagePath: './assets/images/3.jpg', imageHeader: 'Header 3', imageText: 'Text 3'},
-      { imagePath: './assets/images/4.jpg', imageHeader: 'Header 4', imageText: 'Text 4'},
-      { imagePath: './assets/images/5.jpg', imageHeader: 'Header 5', imageText: 'Text 5'}
-      ];
+  public getSlides(): Slide[] {
+    const tempSlides: Slide[] = [];
+    tempSlides.push(new Slide('./assets/images/1.jpg', 'Header 1', 'Text 1', true));
+    tempSlides.push(new Slide('./assets/images/2.jpg', 'Header 2', 'Text 2', false));
+    tempSlides.push(new Slide('./assets/images/3.jpg', 'Header 3', 'Text 3', false));
+    tempSlides.push(new Slide('./assets/images/4.jpg', 'Header 4', 'Text 4', false));
+    tempSlides.push(new Slide('./assets/images/5.jpg', 'Header 5', 'Text 5', false));
+    return tempSlides;
+  }
+
+  public selectSlide(slide: Slide) {
+    this.activeSlide = slide;
+  }
+
+  public prev() {
+  }
+  public next() {
+
   }
   public ngOnDestroy() {
   }
@@ -30,3 +41,22 @@ export class CarouselComponent implements OnInit, OnDestroy {
 }
 
 export enum Direction {UNKNOWN, NEXT, PREV }
+
+export class Slide {
+  imagePath: string;
+  imageHeader: string;
+  imageText: string;
+  isActive: boolean;
+
+  constructor(
+    imagePath: string,
+    imageHeader: string,
+    imageText: string,
+    isActive: boolean) {
+
+      this.imagePath = imagePath;
+      this.imageHeader = imageHeader;
+      this.imageText = imageText;
+      this.isActive = isActive;
+  }
+}

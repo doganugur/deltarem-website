@@ -1,0 +1,10 @@
+:host {
+    .main-home {
+        background:white url('/assets/images/coffeeshop.jpg') no-repeat;
+        background-size: 100%;
+        border: 1px solid #333;
+        height: 300px;
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+    }
+}

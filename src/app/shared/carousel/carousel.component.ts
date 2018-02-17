@@ -6,8 +6,8 @@ import { Component, OnInit, Input, OnDestroy } from '@angular/core';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit, OnDestroy {
-  private slides: Slide[];
-  private activeSlide: Slide;
+  public slides: Slide[];
+  public activeSlide: Slide;
   constructor() { }
 
   ngOnInit() {
